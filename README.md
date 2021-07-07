@@ -32,7 +32,7 @@
 
 # Build Instructions
 
-**To build the program:**
+## To build the program:
 
 1. Download *Visual Studio Community 2019* for Windows or MacOS: https://visualstudio.microsoft.com/downloads/
 2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
@@ -50,57 +50,69 @@
 
 # How to run 
 
-**To run the program:**
+## To run the program:
 
 1. Launch your OS' terminal.
-2. Navigate to the *game-of-life* project folder with the 'cd' command. From here navigate into the 'netcoreapp3.1' folder, the relative path will be:
+2. Navigate to the *game-of-life* project folder with the `cd` command. From here navigate into the 'netcoreapp3.1' folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
+3. Alternatively you can type `cd` followed by a space, then drag the 'netcoreapp3.1' folder into your terminal and the path should automatically be pasted.
 
-       /game-of-life/Life/Life/bin/Debug/netcoreapp3.1
-        
-3. Alternatively you can type 'cd' followed by a space, then drag the 'netcoreapp3.1' folder into your terminal and the path should automatically be pasted.
+```zsh
+foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
+```
 
 ![shortcut](/img/shortcut-to-netcoreapp.gif)
 
-4. **IMPORTANT** If you save your directory to easily copy&paste for later, check if it contains ANY spaces. If so, please place it inside quotation marks like so to avoid errors:
- 
-       cd "your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"
-
-5. Now that you're in the right directory, to run the program, always type:
-
-       dotnet life.dll
-
+4. **IMPORTANT** If you save your directory to easily copy&paste for later, check if it contains ANY spaces. If so, please place it inside quotation marks to avoid errors `"your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"`
+5. Now that you're in the right directory, to run the program, always type `dotnet life.dll`
 6. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter. 
 7. Each option is called with an argument and some are followed by parameters. See these options in the [Usage](#usage) section.
 
 # Usage
 
-**To use the options, please:**
-
-* Type "--" followed by the argument to pass an argument.
-* Arguments may need to be followed by one or more parameters, seperate all arguments and parameters with spaces.
+* An argument always needs "--" before the word. Like this: --argument
+* Arguments may need to be followed by one or more parameters, **seperate all arguments and parameters with spaces**.
 * The program will tell you if you parameters are out of bounds, invalid, or missing.
 * The program will tell you if you have entered arguments incorrectly.
-* Seed must be a ".seed" file with grid values within the default dimensions or specified by you.
-* The largest value in the seed file for example might be 7 by 7. It may seem like the grid needs to be 7 by 7 however, grid rows and columns count from 0,0 therefore the grid needs to be 8 by 8 to accomodate for a cell at 7,7.
-* A seed directory path will not allow "\" in the input, if so, please change the directory to have "/" instead. For example, please use "path/to/glider.seed" NOT "path\to\glider.seed".
-* A seed will disable the random value since the seed already determines which cells are alive.
-* The generations must be a positive whole number (above 0).
-* The maximum update rate must be between whole numbers 1 and 30 (inclusive).
-* The periodic mode will be switched ON if entered. This means the cells wont stop at the borders, but instead wrap around to the opposite sides of the grid.
-* The dimensions argument MUST be followed by 2 whole numbers, first rows then columns. Rows and columns must be between 4 and 48 (inclusive).
-* The program display file may run into errors, to resolve this, increase/decrease the console's font size before running the program.
-* The random chance must be between 0 to 1 inclusive. This could either be 0, 1, or any decimal number in-between (for example 0.7).
-* The step mode will be switched ON if entered. This means you will need to press spacebar to cycle through the generations.
-* When the step mode is ON, it will disable the update rate as generations are not updating automatically anymore.
-* Here is the list of avaliable arguments with their parameter examples:
 
-*       --seed path/to/glider.seed
-*       --generations 50
-*       --max-update 5
-*       --periodic
-*       --dimensions 16 16
-*       --random 0.5
-*       --step
+## Custom settings:
+
+<kbd>--birth</kbd> followed by integers greater or equal to zero like `3` and ranges between two positive integers like `1...9`. You can use both a range along with single integers. This determines the number of neighbours a cell needs to be born.
+
+---
+<kbd>--survival</kbd> followed by integers greater or equal to zero like `1` or a range between two positive integers like `2...3`. You can use both a range along with single integers. This determines the number of neighbours a cell needs to survive.
+
+---
+<kbd>--dimensions</kbd> followed by row & column integers both 4...48 inclusive like `7 11`.  The size of the universe.
+
+---
+<kbd>--memory</kbd> followed by integers 4...512 inclusive like `6`. Stores generations in memory to detect steady-states.
+
+---
+<kbd>--random</kbd> followed by decimals 0...1 inclusive like `0.5`. The probability of any cell to initially be born, making each universe random if no seed was specified (`0.7` is 70%).
+
+---
+<kbd>--max-update</kbd> followed by integers 1...30 inclusive like `6`. The number of generations per second, speeding up / slowing down the lifetime of the universe.
+
+---
+<kbd>--generations</kbd> followed by integers greater than zero like `11`. The number of generations the life will simulate.
+
+---
+<kbd>--neighbour</kbd> followed by *type*, *order*, and *count centre*. The *type* is the type of neighbourhood used, either `moore` or `vonNeumann` (case insensitive). The *order* is the size of the neighbourhood, integers 1...10 (inclusive) **and** less than half of the smallest dimension (out of rows/columns). *Count centre* is a boolean that will include the centre cell as a neighbour, either `true` or `false`. All together this could look like `vonNeumann 6 false`
+
+---
+<kbd>--seed</kbd> followed by `path/to/your/file.seed` of the initial seed you want to use (relative or absolute paths). Seeds must be '.seed' files with grid values within the default dimensions (16x16) or dimensions specified by you. A seed will disable the *random* chance of a cell being born initially since the seed already determines which cells start alive. The largest value in the seed (e.g. 7,7) requires a universe of size 8x8. This is because rows & columns are 0-based. A seed directory path cannot have `\` instead please change the directory to have only `/` instead. E.g. `path/to/glider.seed` **NOT** `path\to\glider.seed`
+
+---
+<kbd>--output</kbd> followed by `path/to/your/generated/file.seed` to save the last generation of the universe (relative or absolute paths). The output file must be a '.seed' file, please create one so the program can write the last generation to it.
+
+---
+<kbd>--periodic</kbd> wraps the universe around as if there is no border around the grid.
+
+---
+<kbd>--step</kbd> will wait for you to press <kbd>space</kbd> to show each generation instead of automatically simulating. When the *step mode* is **ON**, it will disable the *update rate* as generations are not updating automatically anymore.
+
+---
+<kbd>--ghost</kbd> shows the ghosts of the past 3 generations, fading more and more as they get older.
 
 # Class Diagram
 
