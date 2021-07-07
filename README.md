@@ -1,8 +1,9 @@
 ![unit](https://img.shields.io/badge/CAB201-Programming%20Principles-ff69b4?style=plastic)
 ![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
 ![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
-![arduino](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
-![tinkercad](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
+![lang](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
+![framework](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
+![software](https://img.shields.io/badge/Visual%20Studio-2019/Mac-blueviolet?style=plastic&logo=visual%20studio)
 
                                    .x88888x.            x*8888x.:*8888: -"888;                                   
                                   :8**888888X.  :>     X   48888X/`8888H/`8888H
@@ -24,16 +25,27 @@
 - [How to run](#how-to-run)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Notes](#notes)
 
+# About
 
 # Build Instructions
 
 **To build the program, please:**
 
-1. Use Windows 10.
-2. Download Visual Studio Community 2019 or later.
-3. When installing VS community, install .NET desktop development workload.
-4. Navigate into the "Life" folder located with this README and open the "Life.sln" solution in Visual Studio. Either click the "Build" drop down menu and select "Build Solution" or you can use Ctrl+Shift+B. Also run the program just to confirm the solution is built. Use "Clean Solution" then "Rebuild Solution" to resolve any errors.
+1. Download *Visual Studio Community 2019* or later, for Windows 10 or MacOS: https://visualstudio.microsoft.com/downloads/
+2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
+
+![download VS](/img/download-vs.png)
+
+3. Navigate into the first "Life" folder located with **this** README and open the 'Life.sln' solution in *Visual Studio*.
+
+![open](/img/open.gif)
+
+4. To build for Windows, select 'Build Solution'. You can also use Constrol+Shift+B. Use 'Clean Solution' then 'Rebuild Solution' to resolve any errors.
+5. To build for Mac, select 'Build All'. You can also use Command+B. Use 'Clean All' then 'Rebuild All' to resolve any errors.
+
+![build](/img/build.gif)
 
 # How to run 
 
@@ -55,7 +67,6 @@
 # Usage
 
 **To use the options, please:**
-
 
 * Type "--" followed by the argument to pass an argument.
 * Arguments may need to be followed by one or more parameters, seperate all arguments and parameters with spaces.
@@ -83,6 +94,8 @@
 *       --random 0.5
 *       --step
 
-## Notes 
+# Dependencies 
+
+# Notes
 
 This program is in memory of Mathematician, John Conway, creator of the original Game of Life.
