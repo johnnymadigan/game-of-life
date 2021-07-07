@@ -31,7 +31,7 @@
 
 # Build Instructions
 
-**To build the program, please:**
+**To build the program:**
 
 1. Download *Visual Studio Community 2019* or later, for Windows 10 or MacOS: https://visualstudio.microsoft.com/downloads/
 2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
@@ -49,20 +49,27 @@
 
 # How to run 
 
-**To run the program, please:**
+**To run the program:**
 
-1. Navigate into the "Life" folder located with this README, then into the next "Life" folder, next the "bin" folder, next the "Debug" folder, then finally into the "netcoreapp3.1" folder.
-2. From here, Windows 10 allows you to copy the directory path by clicking on the directory in the bar across the top of the finder window, then right click and copy or Ctrl+C.
-3. After copying this directory, open up the Command Prompt by clicking the Windows icon in the bottom left corner of the screen and typing "Command Prompt" or "cmd".
-4. After opening up the command prompt, you will want to navigate to the directory of the program, type "cd" followed by a space to change directory, then paste the directory path copied earlier and hit Enter
-5. A shortcut is to type "cd" then space, then drag the "netcoreapp3.1" folder into the Command Prompt. This is a quick way to paste the directory.
-6. *IMPORTANT* If the directory has ANY spaces, please put this inside quotation marks, so the command will look like (cd "directory\folder name with spaces\file") without the brackets.
-7. This whole command should look something like this:
+1. Launch your OS' terminal.
+2. Navigate to the *game-of-life* project folder with the 'cd' command. From here navigate into the 'netcoreapp3.1' folder, the relative path will be:
 
-*       cd "directory\folder\folder"
+       /game-of-life/Life/Life/bin/Debug/netcoreapp3.1
+        
+3. Alternatively you can type 'cd' followed by a space, then drag the 'netcoreapp3.1' folder into your terminal and the path should automatically be pasted.
 
-8. Now that you're in the right directory, always type "dotnet life.dll" to call the program. 
-9. You can hit enter to run the program using the default settings, however, if you want to use your own settings, see the options & their rules below.
+![shortcut](/img/shortcut-to-netcoreapp.gif)
+
+4. **IMPORTANT** If you save your directory to easily copy&paste for later, check if it contains ANY spaces. If so, please place it inside quotation marks like so to avoid errors:
+ 
+       cd "your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"
+
+5. Now that you're in the right directory, to run the program, always type:
+
+       dotnet life.dll
+
+6. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter. 
+7. Each option is called with an argument and some are followed by parameters. See these options in the [Usage](#usage) section.
 
 # Usage
 
