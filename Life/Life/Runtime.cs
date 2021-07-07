@@ -25,6 +25,13 @@ namespace Life
         public static void DisplayRuntime(bool foundAnException, bool foundUnrecognisedOptions,
             string unrecognisedOptions, string[] messages, string[] argStrings, string[] argValues)
         {
+            /// Display GoL titl
+            Console.WriteLine("               .---.  .----. .-.   ");
+            Console.WriteLine("              /   __}/  {}  \\| |   ");
+            Console.WriteLine("              \\  {_ }\\      /| `--.");
+            Console.WriteLine("               `---'  `----' `----'");
+            Console.WriteLine("               GAME     of    LIFE");
+
             // Display that there were no errors or that there were errors and
             // reverting back to defaults for those settings with errors
             if (foundAnException || foundUnrecognisedOptions)
@@ -50,6 +57,7 @@ namespace Life
                 Console.ResetColor();
             }
 
+            // Display runtime settings + their values (default or custom) + status (Defaults, Success!, error)
             Console.WriteLine(" The program will use the following settings:\n");
 
             for (int line = 0; line < messages.Length; line++)

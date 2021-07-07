@@ -27,7 +27,8 @@ namespace Life
         /// <summary>
         /// First reads arguments, updates settings and displays them. Then
         /// brings the game to life. SubSettings.Update() can immidiately start
-        /// the game of life using default settings (just click run in VS).
+        /// the game of life using default settings (just click run in VS) or
+        /// 'dotnet life.dll' in the terminal (once in root>Life>bin>Debug>netcoreapp3.1)
         /// </summary>
         /// <param name="args">User's input to alter of the Game of Life</param>
         static void Main(string[] args)
