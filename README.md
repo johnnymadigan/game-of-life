@@ -1,83 +1,88 @@
----
-title: <Game of Life>
-author: <Johnny> <Madigan> - <n10027190>
-date: 11/10/2020
----
+![unit](https://img.shields.io/badge/CAB201-Programming%20Principles-ff69b4?style=plastic)
+![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
+![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
+![arduino](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
+![tinkercad](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
 
-## Build Instructions
+                                   .x88888x.            x*8888x.:*8888: -"888;                                   
+                                  :8**888888X.  :>     X   48888X/`8888H/`8888H
+                                  f    `888888x./     X8x.  8888X  8888X  8888X;
+                                 '       `*88888~     X8888 X8888  88888  88888;
+                                  \.    .  `?)X.      '*888!X8888  X8888  X8888;
+                                   `~=-^   X88> ~       `?8 `8888  X888X  X888X
+                                          X8888  ~      ~"  '888"  X888   X888
+                                          488888           !888;  !888;  !888;
+                                  .xx.     88888X         888!   888!   888!
+                                 '*8888.   '88888>       88"    88"    88"
+                                   88888    '8888>        "~     "~     "~
+                                   `8888>    `888                       
+                                    "8888     8%           Johnny Madigan
+                                     `"888x:-"    https://johnnymadigan.github.io/
+
+- [About](#about)
+- [Build Instructions](#build-instructions)
+- [How to run](#how-to-run)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+
+
+# Build Instructions
 
 **To build the program, please:**
 
-1. Download Visual Studio Community 2019 or later, either for Windows 10 or MacOS X.
-2. When installing VS community, install .NET desktop development workload.
-3. Navigate into the first "Life" folder located with this README and open the "Life.sln" solution in Visual Studio. 
-4. To build for Windows, select "Build Solution". You can also use Constrol+Shift+B. Use "Clean Solution" then "Rebuild Solution" to resolve any errors.
-5. To build for Mac, select "Build All". You can also use Command+B. Use "Clean All" then "Rebuild All" to resolve any errors.
+1. Use Windows 10.
+2. Download Visual Studio Community 2019 or later.
+3. When installing VS community, install .NET desktop development workload.
+4. Navigate into the "Life" folder located with this README and open the "Life.sln" solution in Visual Studio. Either click the "Build" drop down menu and select "Build Solution" or you can use Ctrl+Shift+B. Also run the program just to confirm the solution is built. Use "Clean Solution" then "Rebuild Solution" to resolve any errors.
 
-## Usage 
+# How to run 
 
-**To run the program, please...**
+**To run the program, please:**
 
-1. Open the Terminal (Mac) OR Command Prompt (Windows).
-2. Type "cd" followed by a space in the terminal do not press enter yet.
-3. Navigate into the "Life" folder located with this README, then into the next "Life" folder, next the "bin" folder, finally the "Debug" folder.
-4. You will see a "netcoreapp3.1" folder, copy the directory path to this folder and paste it in the terminal, you can also drag the folder into the terminal directly and it'll automatically paste right in there for you. The command should now look like: cd /Users/path/netcoreapp3.1
-5. *IMPORTANT* If the directory has ANY spaces, please put inside quotation marks like so: cd "/Users/path that has spaces/netcoreapp3.1"
-6. Now that you're in the right directory, to call the program, always type: dotnet life.dll 
-7. You can hit enter to run the program using the default settings, however, if you want to use your own settings you'll need to type some options before you hit enter. 
-8. Each option needs an arguments followed by parameters (if needed). These are the avaliable arguments with their needed parameters, see NOTES for detailed info on each of them.
+1. Navigate into the "Life" folder located with this README, then into the next "Life" folder, next the "bin" folder, next the "Debug" folder, then finally into the "netcoreapp3.1" folder.
+2. From here, Windows 10 allows you to copy the directory path by clicking on the directory in the bar across the top of the finder window, then right click and copy or Ctrl+C.
+3. After copying this directory, open up the Command Prompt by clicking the Windows icon in the bottom left corner of the screen and typing "Command Prompt" or "cmd".
+4. After opening up the command prompt, you will want to navigate to the directory of the program, type "cd" followed by a space to change directory, then paste the directory path copied earlier and hit Enter
+5. A shortcut is to type "cd" then space, then drag the "netcoreapp3.1" folder into the Command Prompt. This is a quick way to paste the directory.
+6. *IMPORTANT* If the directory has ANY spaces, please put this inside quotation marks, so the command will look like (cd "directory\folder name with spaces\file") without the brackets.
+7. This whole command should look something like this:
 
-*       --birth         whole numbers above 0 or a range between 2 numbers like 1...9
-*       --survival      whole numbers above 0 or a range between 2 numbers like 1...9
-*       --dimensions    row column whole numbers 4...48 inclusive
-*       --memory        whole numbers 4...512 inclusive
-*       --random 0.5    decimal numbers 0...1 inclusive
-*       --max-update    whole numbers 1...30 inclusive
-*       --neighbour     type order countcentre
-*       --seed          path/to/yourfile.seed
-*       --output        path/to/yourfile.seed
-*       --generations   whole number above 0
-*       --periodic      
-*       --step
-*       --ghost
+*       cd "directory\folder\folder"
 
-## Notes 
+8. Now that you're in the right directory, always type "dotnet life.dll" to call the program. 
+9. You can hit enter to run the program using the default settings, however, if you want to use your own settings, see the options & their rules below.
 
-* An argument always needs "--" before the word. Like this: --argument
+# Usage
+
+**To use the options, please:**
+
+
+* Type "--" followed by the argument to pass an argument.
 * Arguments may need to be followed by one or more parameters, seperate all arguments and parameters with spaces.
 * The program will tell you if you parameters are out of bounds, invalid, or missing.
 * The program will tell you if you have entered arguments incorrectly.
-
-* The seed file determines the starting cells.
-* Seed must be a '.seed' file with grid values within the default dimensions or specified by you.
+* Seed must be a ".seed" file with grid values within the default dimensions or specified by you.
 * The largest value in the seed file for example might be 7 by 7. It may seem like the grid needs to be 7 by 7 however, grid rows and columns count from 0,0 therefore the grid needs to be 8 by 8 to accomodate for a cell at 7,7.
-* A seed directory path will not allow "\" in the input, if so, please change the directory to have "/" instead. 
-For example, please use: path/to/glider.seed NOT path\to\glider.seed
+* A seed directory path will not allow "\" in the input, if so, please change the directory to have "/" instead. For example, please use "path/to/glider.seed" NOT "path\to\glider.seed".
 * A seed will disable the random value since the seed already determines which cells are alive.
-
-* The output file must be a relative or absolute file path to a .seed file, please create one so the program can write the last generation to it.
-
-* The number of generation cycles must be a whole number above 0.
-
-*  The memory needs to be a whole number 4...512 inclusive.
-
-* The maximum update rate must be between whole numbers 1...30 inclusive.
-
-* The rules determine if a cell survives or is born. 
-* There is no limit to how many survival or birth parameters are entered, but they must all be whole numbers above 0 or a range between 2 numbers like 1...9
-
-* The neighbourhood determines the area of cells that will be checked for alive cells, if the number of neighbours matches one of the rules, the cell will be born or survive.
-* 1st parameter is the type of neighbourhood, either type "moore" or "vonneumann" case insensitive.
-* 2nd parameter is the order, which determines how far the neighbourhood spreads, and must be a whole number 1...10 inclusive.
-* 3rd parameter is true or false, whether you want to include the host cell / centre cell as one of the neighbours.
-
+* The generations must be a positive whole number (above 0).
+* The maximum update rate must be between whole numbers 1 and 30 (inclusive).
 * The periodic mode will be switched ON if entered. This means the cells wont stop at the borders, but instead wrap around to the opposite sides of the grid.
-
-* The dimensions argument MUST be followed by 2 whole numbers, first rows then columns. Rows and columns must be between 4...48 inclusive.
-
-* The random factor must be between 0...1 inclusive. This could either be 0, 1, or any decimal number in-between (for example 0.7 is 70%).
-
+* The dimensions argument MUST be followed by 2 whole numbers, first rows then columns. Rows and columns must be between 4 and 48 (inclusive).
+* The program display file may run into errors, to resolve this, increase/decrease the console's font size before running the program.
+* The random chance must be between 0 to 1 inclusive. This could either be 0, 1, or any decimal number in-between (for example 0.7).
 * The step mode will be switched ON if entered. This means you will need to press spacebar to cycle through the generations.
 * When the step mode is ON, it will disable the update rate as generations are not updating automatically anymore.
+* Here is the list of avaliable arguments with their parameter examples:
 
-*  Ghost mode shows the remains of the past 3 generations fading more and more as they get older
+*       --seed path/to/glider.seed
+*       --generations 50
+*       --max-update 5
+*       --periodic
+*       --dimensions 16 16
+*       --random 0.5
+*       --step
+
+## Notes 
+
+This program is in memory of Mathematician, John Conway, creator of the original Game of Life.
