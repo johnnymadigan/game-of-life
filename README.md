@@ -69,8 +69,13 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 # Usage
 
-* An argument always needs "--" before the word. Like this: --argument
-* Arguments may need to be followed by one or more parameters, **seperate all arguments and parameters with spaces**.
+* All arguments must precede with `--` like `--argument`
+* Arguments may need to be followed by one or more parameters, **seperate all arguments and parameters with a space** like
+
+```
+--argument param --argument param param
+```
+
 * The program will tell you if you parameters are out of bounds, invalid, or missing.
 * The program will tell you if you have entered arguments incorrectly.
 
