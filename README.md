@@ -24,6 +24,7 @@
 - [Build Instructions](#build-instructions)
 - [How to run](#how-to-run)
 - [Usage](#usage)
+- [Class Diagram](#class-diagram)
 - [Dependencies](#dependencies)
 - [Notes](#notes)
 
@@ -33,7 +34,7 @@
 
 **To build the program:**
 
-1. Download *Visual Studio Community 2019* or later, for Windows 10 or MacOS: https://visualstudio.microsoft.com/downloads/
+1. Download *Visual Studio Community 2019* for Windows or MacOS: https://visualstudio.microsoft.com/downloads/
 2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
 
 ![download VS](/img/download-vs.png)
@@ -101,8 +102,14 @@
 *       --random 0.5
 *       --step
 
-# Dependencies 
+# Class Diagram
+
+![class diagram](/img/class-diagram.png)
+
+# Dependencies
+
+As this project was developed with *Microsoft*'s *Visual Studio Community 2019*, your OS must be compatible with it so you can build the program. You should also be able to use *VS Professional* or *VS Enterprise*, but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
 
 # Notes
 
-This program is in memory of Mathematician, John Conway, creator of the original Game of Life.
+This project is in memory of Mathematician, John Conway, creator of the original *Game of Life*.
