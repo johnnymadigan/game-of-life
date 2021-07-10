@@ -129,7 +129,7 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 ---
 <kbd>--seed</kbd> followed by `path/to/your/file.seed` of the initial seed you want to use (relative or absolute paths). Seeds must be '.seed' files with grid values within the default dimensions (16x16) or dimensions specified by you. A seed will disable the *random* chance of a cell being born initially since the seed already determines which cells start alive. The largest value in the seed (e.g. 7,7) requires a universe of size 8x8. This is because rows & columns are 0-based. A seed directory path cannot have `\` instead please change the directory to have only `/` instead. E.g. `path/to/glider.seed` **NOT** `path\to\glider.seed`
 
-![setting seed](/img/seed.gif)
+![setting seed](/img/seed-glider.gif)
 
 ---
 <kbd>--output</kbd> followed by `path/to/your/generated/file.seed` to save the last generation of the universe (relative or absolute paths). The output file must be a '.seed' file, please create one so the program can write the last generation to it.
