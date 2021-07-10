@@ -147,9 +147,9 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 ![setting ghost](/img/ghost.gif)
 
-# Class Diagram
+# Classes
 
-![class diagram](/img/class-diagram.png)
+![classes](/Life/ClassDiagram1.png)
 
 # Dependencies
 
