@@ -29,6 +29,18 @@
 - [Notes](#notes)
 
 # About
+Mathematician John Conway’s *Game of Life* is a zero-player game, meaning it’s behaviour is determined by it’s initial state with no additional input. The game is a cellular automaton, meaning simple rules determine how cells replicate and die. Often used to model physical and biological systems, mimic and simulate biological life, build parallel computers and so much more. 
+
+The entire game is a command line application where users can configure custom settings to change how the app simulates ‘life’. The app is invoked from the command line/terminal and displays a running animation of ‘life’ evolving over time. The functionality of this animation is given as a partially complete API that we must adapt into our project. The project is divided into 2 phases, the first demonstrating skills in:
+- Building command-line applications
+- Developing high-quality file I/O functionality
+- Designing a solution to a non-trivial computational problem
+- Understanding and utilise an external API
+
+The latter focuses on extending the first phase’s implementation to be more generalised, scalable and versatile. Demonstrating skills in:
+- Modifying existing code to implement new features
+- Enforcing good Object-Oriented Programming practices
+- Handling unexpected code behaviour elegantly
 
 # Build Instructions
 
@@ -88,9 +100,6 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 ---
 <kbd>--dimensions</kbd> followed by row & column integers both 4...48 inclusive like `7 11`.  The size of the universe.
-
----
-<kbd>--memory</kbd> followed by integers 4...512 inclusive like `6`. Stores generations in memory to detect steady-states.
 
 ---
 <kbd>--random</kbd> followed by decimals 0...1 inclusive like `0.5`. The probability of any cell to initially be born, making each universe random if no seed was specified (`0.7` is 70%).
