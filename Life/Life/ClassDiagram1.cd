@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Life.Program">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.ParentNeighbourhood">
+    <Position X="5.25" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParentNeighbourhood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.ParentSettings">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAEAAAAAAAAAAAAQAIAAAAAAAAACAACA=</HashCode>
+      <FileName>ParentSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.Runtime">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAACAA=</HashCode>
+      <FileName>Runtime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.Seed">
+    <Position X="7.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIAAAE=</HashCode>
+      <FileName>Seed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.SubNeighbourhood">
+    <Position X="5.25" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubNeighbourhood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.SubSettings">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>oEQAAQEgQAgAAkBgABAAAIAAEAMCAYAQIAAAYAICAQQ=</HashCode>
+      <FileName>SubSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.Universe">
+    <Position X="3" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AACACQABAABIAAQIBABAACAiAkSAAAEBAAEAFAAGAAY=</HashCode>
+      <FileName>Universe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Life.UniverseSetup">
+    <Position X="3" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UniverseSetup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
