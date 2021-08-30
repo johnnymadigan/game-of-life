@@ -16,9 +16,9 @@
 - [Notes](#notes)
 
 # About
-Mathematician John Conway’s *Game of Life* is a zero-player game, meaning its behaviour is determined by its initial state with no additional input. The game is a cellular automaton, where simple rules determine how cells replicate and die. Cellular automaton is often used to model physical and biological systems, mimic and simulate biological life, build parallel computers and so much more. 
+Mathematician John Conway’s *Game of Life* is a zero-player game, meaning its behaviour is determined by its initial state with no additional input. The game is a cellular automaton, where simple rules dictate how cells replicate and die. Cellular automaton is often used to model physical and biological systems, mimic and simulate biological life, build parallel computers and so much more. 
 
-The entire game is a command line application where users can configure custom settings to change how the app simulates ‘life’. The app is invoked from the command line/terminal and displays a running animation of ‘life’ evolving over time. The functionality of this animation is given as a partially complete API that we must adapt into our project. The project is divided into 2 parts, the first demonstrating skills in:
+The entire game is a CLI app, where users can configure custom settings to change how the app simulates ‘life’. To display the animation, we were given a partially completed API called *Display* that we had to adapt into our projects. The project is divided into 2 phases, the first demonstrating skills in:
 - Building command-line applications
 - Developing high-quality file I/O functionality
 - Designing a solution to a non-trivial computational problem
