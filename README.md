@@ -5,8 +5,6 @@
 ![framework](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
 ![software](https://img.shields.io/badge/Visual%20Studio-2019/Mac-blueviolet?style=plastic&logo=visual%20studio)
 
-<p align="center">𝔍𝔬𝔥𝔫𝔫𝔶 𝔐𝔞𝔡𝔦𝔤𝔞𝔫</p>
-
 - [About](#about)
 - [Build Instructions](#build-instructions)
 - [How to run](#how-to-run)
@@ -16,9 +14,9 @@
 - [Notes](#notes)
 
 # About
-Mathematician John Conway’s *Game of Life* is a zero-player game, meaning its behaviour is determined by its initial state with no additional input. The game is a cellular automaton, where simple rules dictate how cells replicate and die. Cellular automaton is often used to model physical and biological systems, mimic and simulate biological life, build parallel computers and so much more. 
+Mathematician John Conway’s *Game of Life* is a famouse zero-player, cellular automaton game. The entire game is a CLI app, where users can configure custom settings to change how the app simulates 'life'. The project demonstrates my skills in Object-Oriented-Programming and utilising APIs.
 
-The entire game is a CLI app, where users can configure custom settings to change how the app simulates ‘life’. To display the animation, we were given a partially completed API called *Display* that we had to adapt into our projects. The project is divided into 2 phases, the first demonstrating skills in:
+The project is divided into 2 phases, the first demonstrating skills in:
 - Building command-line applications
 - Developing high-quality file I/O functionality
 - Designing a solution to a non-trivial computational problem
