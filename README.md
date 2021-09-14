@@ -13,7 +13,7 @@
 - [Dependencies](#dependencies)
 - [Notes](#notes)
 
-# About
+# **About**
 Mathematician John Conway’s *Game of Life* is a famouse zero-player, cellular automaton game. The entire game is a CLI app, where users can configure custom settings to change how the app simulates 'life'. The project demonstrates my skills in Object-Oriented-Programming and utilising APIs.
 
 The project is divided into 2 phases, the first demonstrating skills in:
@@ -29,9 +29,9 @@ The latter focuses on extending the first phase’s implementation to be more ge
 
 ![Game of Life demonstration](/img/gol.gif)
 
-# Build Instructions
+# **Build Instructions**
 
-## To build the program:
+## **To build the program:**
 
 1. Download *Visual Studio Community 2019* for Windows or MacOS: https://visualstudio.microsoft.com/downloads/
 2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
@@ -47,12 +47,12 @@ The latter focuses on extending the first phase’s implementation to be more ge
 
 ![build](/img/build.gif)
 
-# How to run 
+# **How to run** 
 
-## To run the program:
+## **To run the program:**
 
 1. Launch your OS' terminal.
-2. Navigate to the *game-of-life* project folder with the `cd` command. From here navigate into the 'netcoreapp3.1' folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
+2. Navigate (`cd`) to the *game-of-life* directory. From here navigate into the 'netcoreapp3.1' folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
 3. Alternatively you can type `cd` followed by a space, then drag the 'netcoreapp3.1' folder into your terminal and the path should automatically be pasted.
 
 ```zsh
@@ -66,7 +66,7 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 6. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter. 
 7. Each option is called with an argument and some are followed by parameters. See these options in the [Usage](#usage) section.
 
-# Usage
+# **Usage**
 
 * All arguments must precede with `--` like `--argument`
 * Arguments may need to be followed by one or more parameters, **seperate all arguments and parameters with a space** like
@@ -78,7 +78,7 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 * The program will tell you if you parameters are out of bounds, invalid, or missing.
 * The program will tell you if you have entered arguments incorrectly.
 
-## Custom settings:
+## **Custom settings:**
 
 <kbd>--birth</kbd> followed by integers greater or equal to zero like `3` and ranges between two positive integers like `1...9`. You can use both a range along with single integers. This determines the number of neighbours a cell needs to be born.
 
@@ -132,14 +132,14 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 ![setting ghost](/img/ghost.gif)
 
-# Classes
+# **Classes**
 
 ![classes](/Life/ClassDiagram1.png)
 
-# Dependencies
+# **Dependencies**
 
 As this project was developed with *Microsoft*'s *Visual Studio Community 2019*, your OS must be compatible with it so you can build the program. You should also be able to use *VS Professional* or *VS Enterprise*, but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
 
-# Notes
+# **Notes**
 
 This project is in memory of Mathematician, John Conway, creator of the original *Game of Life*.
