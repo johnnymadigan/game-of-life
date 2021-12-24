@@ -1,4 +1,4 @@
-![unit](https://img.shields.io/badge/CAB2O1-Programming%20Principles-ff69b4?style=plastic)
+![unit](https://img.shields.io/badge/Unit-Programming%20Principles-ff69b4?style=plastic)
 ![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
 ![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
 ![lang](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
