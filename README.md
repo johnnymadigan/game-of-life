@@ -14,18 +14,18 @@
 - [Notes](#notes)
 
 # **About**
-Mathematician John Conway’s *Game of Life* is a famouse zero-player, cellular automaton game. The entire game is a CLI app, where users can configure custom settings to change how the app simulates 'life'. The project demonstrates my skills in Object-Oriented-Programming and utilising APIs.
+**Game of Life** is a famous zero-player, cellular automaton game. The entire game is a CLI app where users can configure custom settings to change how the app simulates 'life'. The project demonstrates my understanding of the Object-Oriented-Programming paradigm.
 
 The project is divided into 2 phases, the first demonstrating skills in:
 - Building command-line applications
 - Developing high-quality file I/O functionality
 - Designing a solution to a non-trivial computational problem
-- Understanding and utilise an external API
+- Understanding and utilising an external API
 
 The latter focuses on extending the first phase’s implementation to be more generalised, scalable and versatile. Demonstrating skills in:
 - Modifying existing code to implement new features
 - Enforcing good Object-Oriented Programming practices
-- Handling unexpected code behaviour elegantly
+- Handling unexpected behaviour elegantly
 
 ![Game of Life demonstration](/img/gol.gif)
 
@@ -33,17 +33,18 @@ The latter focuses on extending the first phase’s implementation to be more ge
 
 ## **To build the program:**
 
-1. Download *Visual Studio Community 2019* for Windows or MacOS: https://visualstudio.microsoft.com/downloads/
-2. During *Visual Studio*'s installation, select & install .NET desktop development workload.
+1. Download [Visual Studio Community 2019](https://visualstudio.microsoft.com/downloads/) for your OS
+2. During installation, select and install **.NET desktop development** workload.
 
 ![download VS](/img/download-vs.png)
 
-3. Navigate into the first "Life" folder located with **this** README and open the 'Life.sln' solution in *Visual Studio*.
+3. In the first "Life" folder (located with **this** README) open "Life.sln" in **Visual Studio**.
 
 ![open](/img/open.gif)
 
-4. To build for Windows, select 'Build Solution'. You can also use Constrol+Shift+B. Use 'Clean Solution' then 'Rebuild Solution' to resolve any errors.
-5. To build for Mac, select 'Build All'. You can also use Command+B. Use 'Clean All' then 'Rebuild All' to resolve any errors.
+4. To build:
+- On Windows click 'Build Solution' (shortcut Control+Shift+B). Click 'Clean Solution' then 'Rebuild Solution' to resolve any errors.
+- On MacOS click 'Build All' (shortcut Command+B). Click 'Clean All' then 'Rebuild All' to resolve any errors.
 
 ![build](/img/build.gif)
 
@@ -51,20 +52,27 @@ The latter focuses on extending the first phase’s implementation to be more ge
 
 ## **To run the program:**
 
-1. Launch your OS' terminal.
-2. Navigate (`cd`) to the *game-of-life* directory. From here navigate into the 'netcoreapp3.1' folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
-3. Alternatively you can type `cd` followed by a space, then drag the 'netcoreapp3.1' folder into your terminal and the path should automatically be pasted.
+1. Navigate into the "netcoreapp3.1" folder:
+- From the **game-of-life** directory, navigate into the "netcoreapp3.1" folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
+- Alternatively you can type `cd` followed by a space, then drag the "netcoreapp3.1" folder into your terminal and the path should automatically be pasted.
 
 ```zsh
-foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
+cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 ```
 
 ![shortcut](/img/shortcut-to-netcoreapp.gif)
 
-4. **IMPORTANT** If you save your directory to easily copy&paste for later, check if it contains ANY spaces. If so, please place it inside quotation marks to avoid errors `"your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"`
-5. Now that you're in the right directory, to run the program, always type `dotnet life.dll`
-6. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter. 
-7. Each option is called with an argument and some are followed by parameters. See these options in the [Usage](#usage) section.
+- **IMPORTANT** If you save the path to easily copy & paste for later, check if it contains ANY spaces. If so, wrap it inside inside quotation marks to avoid errors `"your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"`
+
+2. Run with
+
+  ```sh
+  dotnet life.dll
+  ```
+
+3. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter.
+
+4. Each option is called with an argument and some are followed by parameters. See these options in [Usage](#usage).
 
 # **Usage**
 
@@ -138,8 +146,8 @@ foo@bar:~$ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 # **Dependencies**
 
-As this project was developed with *Microsoft*'s *Visual Studio Community 2019*, your OS must be compatible with it so you can build the program. You should also be able to use *VS Professional* or *VS Enterprise*, but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
+As this project was developed with Microsoft's Visual Studio Community 2019, your OS must be compatible so you can build the program. You should also be able to use *VS Professional*/*VS Enterprise* but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
 
 # **Notes**
 
-This project is in memory of Mathematician, John Conway, creator of the original *Game of Life*.
+This project is in memory of Mathematician, John Conway, creator of the original **Game of Life**.
