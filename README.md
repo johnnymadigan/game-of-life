@@ -33,7 +33,7 @@ The latter focuses on extending the first phase’s implementation to be more ge
 
 ## **To build the program:**
 
-1. Download [Visual Studio Community 2019](https://visualstudio.microsoft.com/downloads/) for your OS
+1. Download [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for your OS
 2. During installation, select and install **.NET desktop development** workload.
 
 ![download VS](/img/download-vs.png)
@@ -146,7 +146,7 @@ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 
 # **Dependencies**
 
-As this project was developed with Microsoft's Visual Studio Community 2019, your OS must be compatible so you can build the program. You should also be able to use *VS Professional*/*VS Enterprise* but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
+As this project was developed with Microsoft's Visual Studio Community, your OS must be compatible so you can build the program. You should also be able to use *VS Professional*/*VS Enterprise* but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
 
 # **Notes**
 
