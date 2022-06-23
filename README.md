@@ -3,7 +3,7 @@
 ![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
 ![lang](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
 ![framework](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
-![software](https://img.shields.io/badge/Visual%20Studio-2019/Mac-blueviolet?style=plastic&logo=visual%20studio)
+![software](https://img.shields.io/badge/IDE-Visual%20Studio-blueviolet?style=plastic&logo=visual%20studio)
 
 - [About](#about)
 - [Build Instructions](#build-instructions)
