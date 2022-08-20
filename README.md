@@ -1,9 +1,7 @@
-![unit](https://img.shields.io/badge/Unit-Programming%20Principles-ff69b4?style=plastic)
-![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
 ![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
-![lang](https://img.shields.io/badge/Language-C%20Sharp-informational?style=plastic&logo=C%20Sharp)
-![framework](https://img.shields.io/badge/Framework-.NET-informational?style=plastic&logo=.NET)
-![software](https://img.shields.io/badge/IDE-Visual%20Studio-blueviolet?style=plastic&logo=visual%20studio)
+![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
+![framework](https://img.shields.io/badge/C%23-informational?style=plastic&logo=.NET)
+![software](https://img.shields.io/badge/Visual%20Studio-blueviolet?style=plastic&logo=visual%20studio)
 
 - [About](#about)
 - [Build Instructions](#build-instructions)
