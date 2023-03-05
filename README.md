@@ -1,11 +1,11 @@
 ![year](https://img.shields.io/badge/2020-lightgrey?style=plastic)
 ![creators](https://img.shields.io/badge/Johnny%20Madigan-yellow?style=plastic)
-![framework](https://img.shields.io/badge/.NET-informational?style=plastic&logo=.NET)
+![framework](https://img.shields.io/badge/.NET%206-informational?style=plastic&logo=.NET)
 
 # **Game of Life**
 A zero-player, cellular automaton game.
 
-Play in your terminal and configure custom settings to change how the app simulates 'life'.
+Play in your terminal and configure custom settings to change how the app simulates ***L I F E***.
 
 ![Game of Life demonstration](/img/gol.gif)
 
@@ -13,9 +13,11 @@ Play in your terminal and configure custom settings to change how the app simula
 
 Build the project in Visual Studio.
 
-In your terminal, navigate to the "netcoreapp3.1" folder: `cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
+In your terminal, navigate to the "net6.0" folder: `cd game-of-life/Life/Life/bin/Debug/net6.0`
 
 ![shortcut](/img/shortcut-to-netcoreapp.gif)
+
+GIF is out-of-date, I've migrated the project from .NET 3.1 to .NET 6.0 !
 
 Run: `dotnet life.dll`
 
