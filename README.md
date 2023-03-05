@@ -1,90 +1,36 @@
-![year](https://img.shields.io/badge/Year-2020-lightgrey?style=plastic)
-![author](https://img.shields.io/badge/Author-Johnny%20Madigan-yellow?style=plastic)
-![framework](https://img.shields.io/badge/C%23-informational?style=plastic&logo=.NET)
-![software](https://img.shields.io/badge/Visual%20Studio-blueviolet?style=plastic&logo=visual%20studio)
+![year](https://img.shields.io/badge/2020-lightgrey?style=plastic)
+![creators](https://img.shields.io/badge/Johnny%20Madigan-yellow?style=plastic)
+![framework](https://img.shields.io/badge/.NET-informational?style=plastic&logo=.NET)
 
-- [About](#about)
-- [Build Instructions](#build-instructions)
-- [How to run](#how-to-run)
-- [Usage](#usage)
-- [Classes](#classes)
-- [Dependencies](#dependencies)
-- [Notes](#notes)
+# **Game of Life**
+A zero-player, cellular automaton game.
 
-# **About**
-**Game of Life** is a famous zero-player, cellular automaton game. The entire game is a CLI app where users can configure custom settings to change how the app simulates 'life'. The project demonstrates my understanding of the Object-Oriented-Programming paradigm.
-
-The project is divided into 2 phases, the first demonstrating skills in:
-- Building command-line applications
-- Developing high-quality file I/O functionality
-- Designing a solution to a non-trivial computational problem
-- Understanding and utilising an external API
-
-The latter focuses on extending the first phase’s implementation to be more generalised, scalable and versatile. Demonstrating skills in:
-- Modifying existing code to implement new features
-- Enforcing good Object-Oriented Programming practices
-- Handling unexpected behaviour elegantly
+Play in your terminal and configure custom settings to change how the app simulates 'life'.
 
 ![Game of Life demonstration](/img/gol.gif)
 
-# **Build Instructions**
+# **Play**
 
-## **To build the program:**
+Build the project in Visual Studio.
 
-1. Download [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) for your OS
-2. During installation, select and install **.NET desktop development** workload.
-
-![download VS](/img/download-vs.png)
-
-3. In the first "Life" folder (located with **this** README) open "Life.sln" in **Visual Studio**.
-
-![open](/img/open.gif)
-
-4. To build:
-- On Windows click 'Build Solution' (shortcut Control+Shift+B). Click 'Clean Solution' then 'Rebuild Solution' to resolve any errors.
-- On MacOS click 'Build All' (shortcut Command+B). Click 'Clean All' then 'Rebuild All' to resolve any errors.
-
-![build](/img/build.gif)
-
-# **How to run** 
-
-## **To run the program:**
-
-1. Navigate into the "netcoreapp3.1" folder:
-- From the **game-of-life** directory, navigate into the "netcoreapp3.1" folder, the relative path will look like `/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
-- Alternatively you can type `cd` followed by a space, then drag the "netcoreapp3.1" folder into your terminal and the path should automatically be pasted.
-
-```zsh
-cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
-```
+In your terminal, navigate to the "netcoreapp3.1" folder: `cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1`
 
 ![shortcut](/img/shortcut-to-netcoreapp.gif)
 
-- **IMPORTANT** If you save the path to easily copy & paste for later, check if it contains ANY spaces. If so, wrap it inside inside quotation marks to avoid errors `"your path with s p a c e s/game-of-life/Life/Life/bin/Debug/netcoreapp3.1"`
+Run: `dotnet life.dll`
 
-2. Run with
+Hit enter to run using default settings.
 
-  ```sh
-  dotnet life.dll
-  ```
+If you want to use [custom settings](#custom-settings), you'll need to type some options before you hit enter.
 
-3. Hit enter to run the program using the default settings, however, if you want to use your own custom settings, you'll need to type some options before you hit enter.
-
-4. Each option is called with an argument and some are followed by parameters. See these options in [Usage](#usage).
-
-# **Usage**
-
-* All arguments must precede with `--` like `--argument`
-* Arguments may need to be followed by one or more parameters, **seperate all arguments and parameters with a space** like
+Settings may need to be followed by one or more parameters like so:
 
 ```
 --argument param --argument param param
 ```
+The app will tell you if you have entered arguments incorrectly and if parameters are out of bounds, invalid, or missing.
 
-* The program will tell you if you parameters are out of bounds, invalid, or missing.
-* The program will tell you if you have entered arguments incorrectly.
-
-## **Custom settings:**
+# **Custom Settings**
 
 <kbd>--birth</kbd> followed by integers greater or equal to zero like `3` and ranges between two positive integers like `1...9`. You can use both a range along with single integers. This determines the number of neighbours a cell needs to be born.
 
@@ -141,11 +87,3 @@ cd /your/path/game-of-life/Life/Life/bin/Debug/netcoreapp3.1
 # **Classes**
 
 ![classes](/Life/ClassDiagram1.png)
-
-# **Dependencies**
-
-As this project was developed with Microsoft's Visual Studio Community, your OS must be compatible so you can build the program. You should also be able to use *VS Professional*/*VS Enterprise* but since *VS Community* is free and most accessible, it is recommended. Any future releases of *Visual Studio* will require testing.
-
-# **Notes**
-
-This project is in memory of Mathematician, John Conway, creator of the original **Game of Life**.
