@@ -1,6 +1,6 @@
 ![year](https://img.shields.io/badge/2020-lightgrey?style=plastic)
 ![creators](https://img.shields.io/badge/Johnny%20Madigan-yellow?style=plastic)
-![framework](https://img.shields.io/badge/.NET%206-informational?style=plastic&logo=.NET)
+![framework](https://img.shields.io/badge/.NET%206-purple?style=plastic&logo=.NET)
 
 # **Game of Life**
 A zero-player, cellular automaton game.
